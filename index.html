@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="quote.svg" type="image/x-icon">
+    <script src='https://kit.fontawesome.com/98cfcb559a.js' crossorigin='anonymous'></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quote of the day</h1>
+        <hr>
+        <div class="quote_container">
+            <blockquote class="quote" id="quote">Loading...</blockquote>
+            <span class="author" id="author">Author...</span>
+        </div>
+        <div class="button_container">
+            <button onclick="getQuote(url)">
+                <i class="fa-solid fa-message" style="color: #ffffff;"></i>
+                New Quote
+            </button>
+            <button title="You should be logged in to your twitter account!" onclick="tweet()">
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+                Tweet
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
